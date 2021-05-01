@@ -3,6 +3,6 @@ package awesomepackage;
 syntax = "proto3";
 
 message AwesomeMessage {
-    int32 num = 2;
-    string awesome_field = 30; // becomes awesomeField
+    int32 num = 4096;
+    // string awesome_field = 30; // becomes awesomeField
 }
