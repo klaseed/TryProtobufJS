@@ -4,5 +4,5 @@ syntax = "proto3";
 
 message AwesomeMessage {
     int32 num = 1;
-    string awesome_field = 20; // becomes awesomeField
+    string awesome_field = 30; // becomes awesomeField
 }
