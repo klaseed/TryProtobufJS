@@ -3,6 +3,11 @@ package awesomepackage;
 syntax = "proto3";
 
 message AwesomeMessage {
-    int32 num = 4096;
+     int32 a = 1;
+    // int32 num = 4096;
     // string awesome_field = 30; // becomes awesomeField
+}
+
+message AwesomeNameMessage {
+   string awesome_string = 1; // becomes awesomeField
 }
