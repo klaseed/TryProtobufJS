@@ -8,7 +8,7 @@ protobuf.load("awesome-oneof.proto", function (err, root) {
 
   const AwesomeMessage = root.lookupType("awesomepackage.GenericMessage");
 
-  const buffer = fs.readFileSync("awesome-several.dat");
+  const buffer = fs.readFileSync("awesome-oneof.dat");
   console.log(buffer);
 
   // Decode an Uint8Array (browser) or Buffer (node) to a message
