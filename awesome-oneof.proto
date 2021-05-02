@@ -1,0 +1,21 @@
+// awesome.proto
+package awesomepackage;
+syntax = "proto3";
+
+message AwesomeMessage {
+     int32 num = 1;
+    // int32 num = 4096;
+    // string awesome_field = 30; // becomes awesomeField
+}
+
+message AwesomeNameMessage {
+   string name = 1; // becomes awesomeField
+}
+
+message GenericMessage {
+    oneof msg {
+        AwesomeMessage numberMessage = 1;
+        AwesomeNameMessage nameMessage = 2;
+    }
+     
+ }
