@@ -3,7 +3,7 @@
 const fs = require("fs");
 const protobuf = require("protobufjs");
 
-protobuf.load("awesome.proto", function (err, root) {
+protobuf.load("awesome2.proto", function (err, root) {
   if (err) throw err;
 
   const AwesomeMessage = root.lookupType("awesomepackage.AwesomeMessage");

@@ -3,12 +3,13 @@
 const fs = require("fs");
 const protobuf = require("protobufjs");
 
-protobuf.load("awesome.proto", function (err, root) {
+protobuf.load("awesome3.proto", function (err, root) {
   if (err) throw err;
 
-  const AwesomeMessage = root.lookupType("awesomepackage.AwesomeMessage");
+  const AwesomeMessage = root.lookupType("awesomepackage.GenericMessage");
 
-  const payload = { a: 150 };
+//   const payload = { messageNumber: { a: 150 }};
+  const payload = { nameMessage: { awesomeString: "Peter" }};
   console.log("payload", payload);
 
   const errMsg = AwesomeMessage.verify(payload);
